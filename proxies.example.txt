@@ -1,0 +1,11 @@
+# One proxy per line. Supported schemes: http, https, socks5.
+# Each session uses the proxy on the matching line, so for 10 sessions you need 10 lines.
+#
+# http://username:password@203.0.113.10:8080
+# http://username:password@203.0.113.11:8080
+# socks5://198.51.100.7:1080
+#
+# Rotating / gateway providers: put a SINGLE line containing {n}. It is expanded once
+# per session (n = 1..count). Most providers pin an IP to a session id in the username:
+#
+# http://customer-USER-session-{n}:PASSWORD@gate.provider.example:7777

@@ -1,0 +1,15 @@
+{
+  "name": "browser-spoofer",
+  "version": "1.0.0",
+  "description": "Open N isolated browser sessions, each routed through its own proxy/IP",
+  "main": "src/index.js",
+  "bin": { "browser-spoofer": "src/index.js" },
+  "scripts": {
+    "start": "node src/index.js",
+    "setup": "npm install && npx playwright install chromium"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "playwright": "^1.47.0"
+  }
+}
